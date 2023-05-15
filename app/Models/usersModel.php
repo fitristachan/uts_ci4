@@ -10,5 +10,12 @@ class usersModel extends Model
     protected $table = 'users';
     protected $primaryKey = "id_users";
     // allowed fields to manage
-    protected $allowedFields = ['username', 'password'];
+    protected $allowedFields = ['username', 'password', 'id_employee'];
+
+    function getAll(){
+        $builder = $this->db->table('users');
+        $builder->join('employee', 'employee.id_employee = users.id_employee');
+        $query = $builder->get();
+        return $query->getResult();
+    }
 }

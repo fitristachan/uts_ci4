@@ -86,15 +86,25 @@
                      <?php echo session()->getFlashdata('error'); ?>
                 </div>
             <?php endif; ?>
-            <form method="post" action="<?= base_url('/home/login'); ?>">
+            <form method="post" action="<?= base_url('/home/register'); ?>">
                 <?= csrf_field(); ?>
 
-            <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+            <h2 class="fw-bold mb-2 text-uppercase">Register</h2>
               <p class="text-black-50 mb-5">Please enter your username and password!</p>
+
+              <!-- select name employee -->
+                <div class="form-outline mb-4">
+                    <select name="id_employee" class="form-control" required>
+                        <option value="" hidden>--Choose Employee Name--</option>
+                   <?php foreach ($users as $key => $value): ?>
+                        <option value="<?= $value->id_employee?>"><?= $value->firstName. " " .$value->lastName?></option>
+                    <?php endforeach?>
+                    </select>
+                </div>
 
               <!-- username input -->
               <div class="form-outline mb-4">
-                <input type="text" id="username" name="username" class="form-control"   required="required" placeholder="Username" />
+                <input type="text" id="username" name="username" class="form-control" required="required" placeholder="Username" />
               </div>
 
               <!-- Password input -->
@@ -104,12 +114,12 @@
 
               <!-- Submit button -->
               <button type="submit" class="btn btn-primary btn-block mb-4">
-                Login
+                Register
               </button>
 
               <!-- contact buttons -->
               <div class="text-center">
-              <p class="mb-0">Don't have an account? <a href="<?= base_url('/home/register') ?>" class="text-blue-50 fw-bold">Sign Up</a></p>
+              <p class="mb-0">Already have an account? <a href="<?= base_url('/home/index') ?>" class="text-blue-50 fw-bold">Sign Up</a></p>
 
                 <button type="button" class="btn btn-link btn-floating mx-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
