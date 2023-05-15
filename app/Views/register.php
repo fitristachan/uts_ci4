@@ -96,7 +96,7 @@
                 <div class="form-outline mb-4">
                     <select name="id_employee" class="form-control" required>
                         <option value="" hidden>--Choose Employee Name--</option>
-                   <?php foreach ($users as $key => $value): ?>
+                   <?php foreach ($employee as $key => $value): ?>
                         <option value="<?= $value->id_employee?>"><?= $value->firstName. " " .$value->lastName?></option>
                     <?php endforeach?>
                     </select>
@@ -119,7 +119,7 @@
 
               <!-- contact buttons -->
               <div class="text-center">
-              <p class="mb-0">Already have an account? <a href="<?= base_url('/home/index') ?>" class="text-blue-50 fw-bold">Sign Up</a></p>
+              <p class="mb-0">Already have an account? <a href="<?= base_url('/home/index') ?>" class="text-blue-50 fw-bold">Login</a></p>
 
                 <button type="button" class="btn btn-link btn-floating mx-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">

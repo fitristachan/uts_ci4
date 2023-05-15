@@ -109,7 +109,7 @@
 
               <!-- contact buttons -->
               <div class="text-center">
-              <p class="mb-0">Don't have an account? <a href="<?= base_url('/home/register') ?>" class="text-blue-50 fw-bold">Sign Up</a></p>
+              <p class="mb-0">Don't have an account? <a href="<?= base_url('/home/registerView') ?>" class="text-blue-50 fw-bold">Sign Up</a></p>
 
                 <button type="button" class="btn btn-link btn-floating mx-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
