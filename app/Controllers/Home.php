@@ -76,19 +76,30 @@ class Home extends BaseController
             if (password_verify($password, $pass)) {
                 session()->set([
                     'username' => $dataUser['username'],
+                    'id_users' => $dataUser['id_users'],
                     'logged_in' => TRUE
                 ]);
-                return view('home');
+                print_r('benar');
+                return view('home', session());
             } else {
-                session()->setFlashdata('error', print_r($password));
+                session()->setFlashdata('error', 'Password salah');
                 return view('login');
-            }
+            }   
+        }else if ($dataUser == FALSE && password_verify($password, $pass) == FALSE) {
+            session()->setFlashdata('error', 'Username dan password salah');
+            return view('login');
+        }else {
+                session()->setFlashdata('error', 'Username salah');
+                return view('login');
         } 
     }
 
     public function beranda()
     {
-        return view('home');
+        echo view('templates/header');
+        echo view('home');
+        echo view('templates/footer');
+
     }
 
     public function logout()

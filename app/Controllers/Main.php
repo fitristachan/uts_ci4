@@ -24,7 +24,7 @@ class Main extends BaseController
     public function stocks(){
         $this->data['page_title'] = "Stocks";
         echo view('templates/header');
-        //echo view('stocks/lists', $this->data);
+        echo view('stocks/lists', $this->data);
         echo view('templates/footer');
     }
 }
