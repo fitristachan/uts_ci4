@@ -54,8 +54,15 @@ $routes->post('/home/(:any)', 'Home::$1');
  * needing to reload it.
  */
  
+
+ //MAIN
 $routes->get('/Main/(:any)', 'Main::$1');
 $routes->post('/Main/(:any)', 'Main::$1');
+
+//POS
+$routes->get('/post/(:any)', 'Post::$1');
+$routes->post('/post/(:any)', 'Post::$1');
+
 
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';

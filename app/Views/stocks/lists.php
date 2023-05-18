@@ -1,4 +1,4 @@
-<nav class="nav gap-3 justify-content-end mt-5">
+<nav class="nav gap-3 justify-content-end">
     <h4>Add New Stock</h4>
     <a href="<?= base_url('Main/addStocks/') ?>"class="btn btn-primary"><i class="bi bi-plus-lg"></i></a>
   </nav>
