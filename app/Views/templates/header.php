@@ -18,6 +18,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
 </head>
 
 <body>
@@ -32,7 +35,7 @@
     <a class="nav-link active" aria-current="page" href="<?= base_url('home/beranda')?>">Home</a>
     <a class="nav-link" href="<?= base_url('Main/stocks')?>">Stock</a>
     <a class="nav-link" href="#">Cashier</a>
-    <a class="nav-link" href="#">Employee</a>
+    <a class="nav-link" href="<?= base_url('Main/employee')?>">Employee</a>
     <a class="nav-link" href="#">History</a>
 </div>
 </div>
@@ -49,10 +52,10 @@
             <a class="nav-link active" aria-current="page" href="<?= base_url('home/beranda')?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="<?= base_url('Main/stocks')?>">Stocks</a>
           </li>
           <a class="nav-link" href="#">Cashier</a>
-          <a class="nav-link" href="#">Employee</a>
+          <a class="nav-link" href="<?= base_url('Main/employee')?>">Employee</a>
           <a class="nav-link" href="#">History</a>
         </ul>
       </div>
@@ -66,5 +69,23 @@
 </div>
 </nav>
 
-</body>
-</html>
+    <!-- Wrapper -->
+    <div class="wrapper my-4 .mx-auto mt-5 pt-5">
+        <!-- Main Container -->
+        <div class="main container">
+            <?php if(!empty($session->getFlashdata('success_message'))): ?>
+                <div class="alert alert-success rouded-0">
+                    <div class="d-flex">
+                        <div class="col-11"><?= $session->getFlashdata('success_message') ?></div>
+                        <div class="col-1 text-end"><a href="javascript:void(0)" onclick="$(this).closest('.alert').remove()" class="text-muted text-decoration-none"><i class="bi bi-x-circle"></i></a></div>
+                    </div>
+                </div>
+            <?php endif ?>
+            <?php if(!empty($session->getFlashdata('error_message'))): ?>
+                <div class="alert alert-danger rouded-0">
+                    <div class="d-flex">
+                        <div class="col-11"><?= $session->getFlashdata('error_message') ?></div>
+                        <div class="col-1 text-end"><a href="javascript:void(0)" onclick="$(this).closest('.alert').remove()" class="text-muted text-decoration-none"><i class="bi bi-x-circle"></i></a></div>
+                    </div>
+                </div>
+            <?php endif ?>

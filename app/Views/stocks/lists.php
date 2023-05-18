@@ -1,27 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Happiness Bookstore</title>
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
-  <!-- Bootstrap Font Icon CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    create stok
-    view list stok yang ada kananya ada tombol edit dan hapus 
-</body>
-</html>
+<nav class="nav gap-3 justify-content-end mt-5">
+    <h4>Add New Stock</h4>
+    <a href="<?= base_url('Main/addStocks/') ?>"class="btn btn-primary"><i class="bi bi-plus-lg"></i></a>
+  </nav>
+    <hr class="border border-primary border-2 opacity-50">
+    <table class="table table-bordered">
+  <thead class="table-primary">
+    <tr>
+      <th scope="col">Code</th>
+      <th scope="col">Title</th>
+      <th scope="col">Category</th>
+      <th scope="col">Stock</th>
+      <th scope="col">Selling Price</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php if(count($list) > 0): ?>
+      <?php $i = 1; ?>
+      <?php foreach($list as $row): ?>
+    <tr>
+      <td><?= $row->code_book ?></td>
+      <td><?= $row->title ?></td>
+      <td><?= $row->name_category ?></td>
+      <td><?= $row->stock ?></td>
+      <td>Rp<?= $row->selling_price ?>,00</td>
+      <td> <div class="btn-group btn-group-sm">
+            <a href="<?= base_url('Main/detailsStocks/'.$row->id_books) ?>" class="btn btn-default bg-gradient-light border text-dark rounded-0" title="View Stock"><i class="bi bi-eye"></i></a>
+            <a href="<?= base_url('Main/editStocks/'.$row->id_books) ?>" class="btn btn-primary rounded-0" title="Edit Stock"><i class="bi bi-pencil-square"></i></a>
+            <a href="<?= base_url('Main/deleteStocks/'.$row->id_books) ?>" onclick="if(confirm('Are you sure to delete <?= $row->title ?>?') === false) event.preventDefault()" class="btn btn-danger rounded-0" title="Delete Stocks"><i class="bi bi-trash"></i></a>
+        </div></td>
+    </tr>
+    <?php endforeach; ?>
+      <?php endif; ?>
+  </tbody>
+</table>

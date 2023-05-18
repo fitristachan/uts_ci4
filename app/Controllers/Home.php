@@ -2,12 +2,10 @@
 
 namespace App\Controllers;
 use App\Models\usersModel;
-use App\Models\employeeModel;
 
 class Home extends BaseController
 {
     function __construct(){
-        $this->employee = new employeeModel();
         $this->users = new usersModel();
     }
 
@@ -27,7 +25,7 @@ class Home extends BaseController
     public function register()
     {
         //combobox
-        $data['users'] = $this->users->getAll();
+       // $data['users'] = $this->users->getAll();
 
         //regis
         if (!$this->validate([
@@ -80,7 +78,7 @@ class Home extends BaseController
                     'logged_in' => TRUE
                 ]);
                 print_r('benar');
-                return view('home', session());
+                return redirect()->to('/home/beranda');
             } else {
                 session()->setFlashdata('error', 'Password salah');
                 return view('login');
@@ -96,7 +94,7 @@ class Home extends BaseController
 
     public function beranda()
     {
-        echo view('templates/header');
+        echo view('templates/header', $this->data);
         echo view('home');
         echo view('templates/footer');
 
