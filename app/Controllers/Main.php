@@ -51,12 +51,19 @@ class Main extends BaseController
     }
 
     public function editStocks($id_books=''){
+        if(empty($id_books)){
+            $this->session->setFlashdata('error_message','Unknown Data ID.') ;
+            return redirect()->to('/Main/stocks');
+        }
+        $this->data['page_title'] = "Edit Stocks Details";
+        $qry= $this->stocks_model->select('*')->where(['id'=>$id_books]);
+        $this->data['data'] = $qry->first();
         echo view('templates/header', $this->data);
         echo view('stocks/edit', $this->data);
         echo view('templates/footer');
     }
 
-    public function detailsStocks(){
+    public function detailsStocks($id_books=''){
     }
 
     public function deleteStocks($id_books=''){
@@ -95,9 +102,17 @@ class Main extends BaseController
         }
     
         public function saveEmployee(){
+            
         }
     
         public function editEmployee($id_employee=''){
+            if(empty($id_employee)){
+                $this->session->setFlashdata('error_message','Unknown Data ID.') ;
+                return redirect()->to('/Main/employee');
+            }
+            $this->data['page_title'] = "Edit Employee Details";
+            $qry= $this->employee_model->select('*')->where(['id'=>$id_employee]);
+            $this->data['data'] = $qry->first();
             echo view('templates/header', $this->data);
             echo view('employee/edit', $this->data);
             echo view('templates/footer');

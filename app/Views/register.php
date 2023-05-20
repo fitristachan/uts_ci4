@@ -90,7 +90,7 @@
                      <?php echo session()->getFlashdata('error'); ?>
                 </div>
             <?php endif; ?>
-            <form method="post" action="<?= base_url('/home/register'); ?>">
+            <form method="post" action="<?= base_url('/auth/register'); ?>">
                 <?= csrf_field(); ?>
 
             <div class="text-center">
@@ -125,7 +125,7 @@
 
               <!-- contact buttons -->
               <div class="text-center">
-              <p class="mb-0">Already have an account? <a href="<?= base_url('/home/index') ?>" class="text-blue-50 fw-bold">Login</a></p>
+              <p class="mb-0">Already have an account? <a href="<?= base_url('/auth/index') ?>" class="text-blue-50 fw-bold">Login</a></p>
 
                 <button type="button" class="btn btn-link btn-floating mx-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">

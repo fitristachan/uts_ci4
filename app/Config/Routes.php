@@ -17,7 +17,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('Auth');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -35,10 +35,10 @@ $routes->set404Override();
  
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Auth::index');
  
-$routes->get('/home/(:any)', 'Home::$1');
-$routes->post('/home/(:any)', 'Home::$1');
+$routes->get('/auth/(:any)', 'Auth::$1');
+$routes->post('/auth/(:any)', 'Auth::$1');
  
 /*
  * --------------------------------------------------------------------
@@ -54,14 +54,17 @@ $routes->post('/home/(:any)', 'Home::$1');
  * needing to reload it.
  */
  
+//home
+$routes->get('/home/(:any)', 'Home::$1');
+$routes->post('/home/(:any)', 'Home::$1');
 
  //MAIN
 $routes->get('/Main/(:any)', 'Main::$1');
 $routes->post('/Main/(:any)', 'Main::$1');
 
 //POS
-$routes->get('/post/(:any)', 'Post::$1');
-$routes->post('/post/(:any)', 'Post::$1');
+$routes->get('/pos/(:any)', 'Pos::$1');
+$routes->post('/pos/(:any)', 'Pos::$1');
 
 
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
