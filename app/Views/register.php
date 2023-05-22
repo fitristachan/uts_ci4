@@ -99,7 +99,8 @@
             </div>
 
               <!-- select name employee -->
-                <div class="form-outline mb-4">
+                <div class="form-outline input-group mb-4">
+                <span class="input-group-text"><i class="bi bi-person-badge-fill"></i></span>
                     <select name="id_employee" class="form-control" required>
                         <option value="" hidden>--Choose Employee Name--</option>
                    <?php foreach ($employee as $key => $value): ?>
@@ -109,13 +110,20 @@
                 </div>
 
               <!-- username input -->
-              <div class="form-outline mb-4">
+              <div class="form-outline input-group mb-4">
+                <span class="input-group-text">@</span>
                 <input type="text" id="username" name="username" class="form-control" required="required" placeholder="Username" />
               </div>
 
               <!-- Password input -->
-              <div class="form-outline mb-4">
+              <div class="form-outline input-group mb-4">
+                <span class="input-group-text"><i class="bi bi-key"></i></span>
                 <input type="password" id="password" name="password" class="form-control"  required="required" placeholder="Password" />
+              </div>
+
+              <div class="form-outline input-group mb-4">
+                <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                <input type="password" id="password_conf" name="password_conf" class="form-control"  required="required" placeholder="Password Confirmation" />
               </div>
 
               <!-- Submit button -->

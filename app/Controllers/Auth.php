@@ -25,30 +25,33 @@ class Auth extends BaseController
 
     public function register()
     {
-        //combobox
-       // $data['users'] = $this->users->getAll();
-
         //regis
         if (!$this->validate([
             'username' => [
                 'rules' => 'required|min_length[4]|max_length[25]|is_unique[users.username]',
                 'errors' => [
-                    'required' => '{field} Harus diisi',
-                    'min_length' => '{field} Minimal 4 Karakter',
-                    'max_length' => '{field} Maksimal 25 Karakter',
-                    'is_unique' => 'Username sudah digunakan sebelumnya'
+                    'required' => '{field} Must be field',
+                    'min_length' => '{field} Minimum length 4 character',
+                    'max_length' => '{field} Maximum length 25 character',
+                    'is_unique' => 'Username already exists'
                 ]
             ],
             'password' => [
                 'rules' => 'required|min_length[4]|max_length[50]',
                 'errors' => [
-                    'required' => '{field} Harus diisi',
-                    'min_length' => '{field} Minimal 4 Karakter',
-                    'max_length' => '{field} Maksimal 50 Karakter',
+                    'required' => '{field} Must be field',
+                    'min_length' => '{field} Minimum length 4 character',
+                    'max_length' => '{field} Maximum length 50 character',
                 ]
             ],
+            'password_conf' => [
+                'rules' => 'matches[password]',
+                'errors' => [
+                    'matches' => 'Password didnt match',
+                ]
   
             ],
+        ],
         )) {
             session()->setFlashdata('error', $this->validator->listErrors());
             return redirect()->back()->withInput();
@@ -83,14 +86,14 @@ class Auth extends BaseController
                 $session->set($ses_data);
                 return redirect()->to('/home/beranda');
             } else {
-                session()->setFlashdata('error', 'Password salah');
+                session()->setFlashdata('error', 'Wrong password');
                 return redirect()->to('/auth/index');
             }   
         }else if ($dataUser == FALSE && password_verify($password, $pass) == FALSE) {
-            session()->setFlashdata('error', 'Username dan password salah');
+            session()->setFlashdata('error', 'Username didnt exists and Wrong password');
             return redirect()->to('/auth/index');
         }else {
-                session()->setFlashdata('error', 'Username salah');
+                session()->setFlashdata('error', 'Username didnt exists');
                 return redirect()->to('/auth/index');
         } 
     }

@@ -55,15 +55,15 @@ $routes->post('/auth/(:any)', 'Auth::$1');
  */
  
 //home
-$routes->get('/home/(:any)', 'Home::$1');
+$routes->get('/home/(:any)', 'Home::$1',['filter' => 'authGuard']);
 $routes->post('/home/(:any)', 'Home::$1');
 
  //MAIN
-$routes->get('/Main/(:any)', 'Main::$1');
+$routes->get('/Main/(:any)', 'Main::$1',['filter' => 'authGuard']);
 $routes->post('/Main/(:any)', 'Main::$1');
 
 //POS
-$routes->get('/pos/(:any)', 'Pos::$1');
+$routes->get('/pos/(:any)', 'Pos::$1',['filter' => 'authGuard']);
 $routes->post('/pos/(:any)', 'Pos::$1');
 
 
