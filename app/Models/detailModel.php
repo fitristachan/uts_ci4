@@ -10,5 +10,5 @@ class detailModel extends Model
     protected $table = 'detail_sale';
     protected $primaryKey = "id_detail";
     // allowed fields to manage
-    protected $allowedFields = ['id_detail', 'factur', 'id_books', 'barcode' ,'selling_price', 'qty', 'total_price'];
+    protected $allowedFields = ['id_detail', 'facture', 'id_books', 'barcode' ,'selling_price', 'qty', 'total_price'];
 }

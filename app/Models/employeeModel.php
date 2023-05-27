@@ -11,4 +11,6 @@ class employeeModel extends Model
     protected $primaryKey = "id_employee";
     // allowed fields to manage
     protected $allowedFields = ['id_employee', 'firstName', 'lastName', 'title', 'salary', 'start_date', 'employee_code'];
+
+
 }

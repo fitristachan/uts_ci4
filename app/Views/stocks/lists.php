@@ -1,8 +1,9 @@
 <nav class="nav gap-3">
-    <a href="<?= base_url(previous_url()) ?>"class="btn btn-warning">Back</i></a>
     <h3 class="text-primary">List Stocks</h3>
 </nav>
 <hr class="border border-primary border-2 opacity-50">
+<div class="card border border">
+<div class="card-body">
 <nav class="nav gap-3 justify-content-end">
     <h4>Add New Stock</h4>
     <a href="<?= base_url('Main/addStocks/') ?>"class="btn btn-primary"><i class="bi bi-plus-lg"></i></a>
@@ -39,3 +40,5 @@
       <?php endif; ?>
   </tbody>
 </table>
+      </div>
+      </div>

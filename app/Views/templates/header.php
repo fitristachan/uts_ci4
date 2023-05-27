@@ -20,12 +20,12 @@
 
 </head>
 
-<body>
-  <nav class="navbar bg-light fixed-top" style="background-color: #e3f2fd;">
+<body class="bg-light">
+  <nav class="navbar bg-white fixed-top">
   <div class="container-fluid">
-  <div class="navbar navbar-expand-lg bg-light">
-   <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="" role="button"><i class="bi bi-list"></i></span>
+  <div class="navbar navbar-expand-lg bg-white">
+   <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="fs-5 fw-bold fst-italic text-primary" role="button"><span class="mx-auto"><i class="bi bi-list"></i></span>Happiness Bookstore</span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
@@ -40,7 +40,7 @@
   
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Happiness Bookstore</h5>
+        <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">Happiness Bookstore</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -57,8 +57,8 @@
         </ul>
       </div>
     </div>
-    <div class="dropdown">
-    <a class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Happiness Bookstore</a>
+    <div class="dropdown dropstart">
+    <a class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="mx-auto p-2"><i class="bi bi-person-circle"></i></span><?= $session->username ?></a>
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="<?=base_url('home/logout')?>">Log out</a></li>
     </ul>

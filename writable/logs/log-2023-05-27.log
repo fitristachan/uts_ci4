@@ -1,0 +1,1894 @@
+CRITICAL - 2023-05-27 03:07:31 --> time() expects exactly 0 arguments, 1 given
+in APPPATH\Views\cashier\cashier.php on line 20.
+ 1 APPPATH\Views\cashier\cashier.php(20): time('HH:MM:SS')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(30): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 03:09:46 --> date_default_timezone_set(): Timezone ID 'Indonesia/Jakarta' is invalid
+in APPPATH\Views\cashier\cashier.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'Indonesia/Jakarta\' is invalid', 'APPPATH\\Views\\cashier\\cashier.php', 20)
+ 2 APPPATH\Views\cashier\cashier.php(20): date_default_timezone_set('Indonesia/Jakarta')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 6 APPPATH\Controllers\Pos.php(30): view('cashier/cashier', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:23:15 --> time() expects exactly 0 arguments, 1 given
+in APPPATH\Views\cashier\cashier.php on line 20.
+ 1 APPPATH\Views\cashier\cashier.php(20): time('hh:mm:ss')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(30): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:23:58 --> time() expects exactly 0 arguments, 1 given
+in APPPATH\Views\cashier\cashier.php on line 20.
+ 1 APPPATH\Views\cashier\cashier.php(20): time('H:i:s')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(30): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 04:57:40 --> Undefined variable $request
+in APPPATH\Views\employee\create.php on line 21.
+ 1 APPPATH\Views\employee\create.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Views\\employee\\create.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('employee/create', [], true)
+ 5 APPPATH\Controllers\Main.php(100): view('employee/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->addEmployee()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 05:21:46 --> Undefined variable $saveEmployee
+in APPPATH\Controllers\Main.php on line 125.
+ 1 APPPATH\Controllers\Main.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $saveEmployee', 'APPPATH\\Controllers\\Main.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->saveEmployee()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 05:33:05 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Main.php on line 89.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Main.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Main')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Main')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Main', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 05:51:30 --> Undefined variable $category
+in APPPATH\Views\stocks\create.php on line 13.
+ 1 APPPATH\Views\stocks\create.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\stocks\\create.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/create', [], true)
+ 5 APPPATH\Controllers\Main.php(48): view('stocks/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->addStocks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 05:51:45 --> Undefined variable $category
+in APPPATH\Views\stocks\create.php on line 13.
+ 1 APPPATH\Views\stocks\create.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\stocks\\create.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/create', [], true)
+ 5 APPPATH\Controllers\Main.php(48): view('stocks/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->addStocks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 05:56:51 --> Undefined variable $category
+in APPPATH\Views\stocks\create.php on line 13.
+ 1 APPPATH\Views\stocks\create.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\stocks\\create.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/create', [], true)
+ 5 APPPATH\Controllers\Main.php(51): view('stocks/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->addStocks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 05:57:23 --> Undefined variable $name_category
+in APPPATH\Views\stocks\create.php on line 13.
+ 1 APPPATH\Views\stocks\create.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name_category', 'APPPATH\\Views\\stocks\\create.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/create', [], true)
+ 5 APPPATH\Controllers\Main.php(51): view('stocks/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->addStocks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 05:58:29 --> Undefined variable $category
+in APPPATH\Views\stocks\create.php on line 13.
+ 1 APPPATH\Views\stocks\create.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\stocks\\create.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/create', [...], true)
+ 5 APPPATH\Controllers\Main.php(51): view('stocks/create', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->addStocks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 05:58:49 --> Attempt to read property "id_category" on null
+in APPPATH\Views\stocks\create.php on line 14.
+ 1 APPPATH\Views\stocks\create.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_category" on null', 'APPPATH\\Views\\stocks\\create.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/create', [], true)
+ 5 APPPATH\Controllers\Main.php(51): view('stocks/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->addStocks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 06:03:38 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\stocks\create.php on line 13.
+ 1 APPPATH\Views\stocks\create.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\stocks\\create.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/create', [], true)
+ 5 APPPATH\Controllers\Main.php(51): view('stocks/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->addStocks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 06:09:03 --> Attempt to read property "id_category" on null
+in APPPATH\Views\stocks\create.php on line 14.
+ 1 APPPATH\Views\stocks\create.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_category" on null', 'APPPATH\\Views\\stocks\\create.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/create', [], true)
+ 5 APPPATH\Controllers\Main.php(51): view('stocks/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->addStocks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 06:09:36 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\stocks\create.php on line 13.
+ 1 APPPATH\Views\stocks\create.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\stocks\\create.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/create', [], true)
+ 5 APPPATH\Controllers\Main.php(51): view('stocks/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->addStocks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 06:42:19 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Main.php(123): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->saveCategory()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 06:53:09 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 06:53:10 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 06:54:16 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 06:54:16 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 06:57:03 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 06:57:03 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 06:57:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getCategory()
+in APPPATH\Controllers\Main.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->stocks()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 06:57:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getCategory()
+in APPPATH\Controllers\Main.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->stocks()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 06:57:31 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 06:57:31 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:03:52 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 07:03:52 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:07:17 --> mysqli_sql_exception: Not unique table/alias: 'books' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Models\booksModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(40): App\Models\booksModel->getCategory()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->stocks()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-27 07:07:17 --> Not unique table/alias: 'books'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+JOIN `books` ON `books`.`id_category` = `category`.`id_category`', [], false)
+ 2 APPPATH\Models\booksModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Main.php(40): App\Models\booksModel->getCategory()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->stocks()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:07:23 --> mysqli_sql_exception: Not unique table/alias: 'books' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Models\booksModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(40): App\Models\booksModel->getCategory()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->stocks()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-27 07:07:23 --> Not unique table/alias: 'books'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+JOIN `books` ON `books`.`id_category` = `category`.`id_category`', [], false)
+ 2 APPPATH\Models\booksModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Main.php(40): App\Models\booksModel->getCategory()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->stocks()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:07:59 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 07:07:59 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:09:04 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 07:09:04 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:09:08 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 07:09:08 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:19:21 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 07:19:21 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 07:19:48 --> Call to a member function delete() on array
+in APPPATH\Controllers\Main.php on line 159.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:20:16 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 07:20:16 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 07:22:27 --> Call to a member function getResult() on bool
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 07:30:00 --> Call to undefined function App\Models\delete()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 07:31:11 --> Call to undefined function App\Models\delete()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 07:31:17 --> Call to undefined function App\Models\delete()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 07:32:55 --> Attempt to read property "3" on string
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Models\booksModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "3" on string', 'APPPATH\\Models\\booksModel.php', 24)
+ 2 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 07:33:20 --> Attempt to read property "3" on string
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Models\booksModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "3" on string', 'APPPATH\\Models\\booksModel.php', 24)
+ 2 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 07:33:24 --> Attempt to read property "3" on string
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Models\booksModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "3" on string', 'APPPATH\\Models\\booksModel.php', 24)
+ 2 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 07:33:39 --> Attempt to read property "3" on string
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Models\booksModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "3" on string', 'APPPATH\\Models\\booksModel.php', 24)
+ 2 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:34:21 --> mysqli_sql_exception: Unknown column 'b' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Models\booksModel.php(24): CodeIgniter\Database\BaseBuilder->delete('b')
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-27 07:34:21 --> Unknown column 'b' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `b` IS NULL', [], false)
+ 2 APPPATH\Models\booksModel.php(24): CodeIgniter\Database\BaseBuilder->delete('b')
+ 3 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:35:00 --> mysqli_sql_exception: Unknown column 'b' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Models\booksModel.php(24): CodeIgniter\Database\BaseBuilder->delete('b')
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-27 07:35:00 --> Unknown column 'b' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `b` IS NULL', [], false)
+ 2 APPPATH\Models\booksModel.php(24): CodeIgniter\Database\BaseBuilder->delete('b')
+ 3 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:35:29 --> mysqli_sql_exception: Unknown column 'b' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Models\booksModel.php(24): CodeIgniter\Database\BaseBuilder->delete('b')
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-27 07:35:29 --> Unknown column 'b' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `b` IS NULL', [], false)
+ 2 APPPATH\Models\booksModel.php(24): CodeIgniter\Database\BaseBuilder->delete('b')
+ 3 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:35:38 --> mysqli_sql_exception: Unknown column 'b' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Models\booksModel.php(24): CodeIgniter\Database\BaseBuilder->delete('b')
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-27 07:35:38 --> Unknown column 'b' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `b` IS NULL', [], false)
+ 2 APPPATH\Models\booksModel.php(24): CodeIgniter\Database\BaseBuilder->delete('b')
+ 3 APPPATH\Controllers\Main.php(159): App\Models\booksModel->deleteStocks('3')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:36:14 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 07:36:14 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 07:36:37 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `bo...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bo...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bo...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bo...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 07:36:38 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `books`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Main.php(159): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->deleteStocks('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 08:29:07 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(239): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->editEmployee('11')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 08:29:07 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employee`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Main.php(239): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editEmployee('11')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 08:36:37 --> syntax error, unexpected token "else"
+in APPPATH\Controllers\Main.php on line 216.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Main.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Main')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Main')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Main', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 08:36:40 --> syntax error, unexpected token "else"
+in APPPATH\Controllers\Main.php on line 216.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Main.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Main')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Main')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Main', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 08:36:43 --> syntax error, unexpected token "else"
+in APPPATH\Controllers\Main.php on line 216.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Main.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Main')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Main')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Main', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 08:49:47 --> Undefined variable $id_employee
+in APPPATH\Views\employee\edit.php on line 8.
+ 1 APPPATH\Views\employee\edit.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_employee', 'APPPATH\\Views\\employee\\edit.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('employee/edit', [], true)
+ 5 APPPATH\Controllers\Main.php(241): view('employee/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editEmployee('11')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:08:25 --> Undefined variable $category
+in APPPATH\Views\stocks\edit.php on line 14.
+ 1 APPPATH\Views\stocks\edit.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\stocks\\edit.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 5 APPPATH\Controllers\Main.php(147): view('stocks/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:09:08 --> Undefined variable $request
+in APPPATH\Views\stocks\edit.php on line 75.
+ 1 APPPATH\Views\stocks\edit.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Views\\stocks\\edit.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 5 APPPATH\Controllers\Main.php(148): view('stocks/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:11:23 --> Call to a member function where() on array
+in APPPATH\Controllers\Main.php on line 144.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:12:04 --> Call to a member function first() on array
+in APPPATH\Controllers\Main.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:13:32 --> Call to a member function getCategory() on array
+in APPPATH\Controllers\Main.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:15:02 --> Undefined variable $request
+in APPPATH\Views\stocks\edit.php on line 75.
+ 1 APPPATH\Views\stocks\edit.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Views\\stocks\\edit.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 5 APPPATH\Controllers\Main.php(148): view('stocks/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:15:16 --> Undefined variable $request
+in APPPATH\Views\stocks\edit.php on line 75.
+ 1 APPPATH\Views\stocks\edit.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Views\\stocks\\edit.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 5 APPPATH\Controllers\Main.php(148): view('stocks/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:17:48 --> Call to a member function first() on array
+in APPPATH\Controllers\Main.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:18:00 --> Call to a member function first() on null
+in APPPATH\Controllers\Main.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:19:05 --> Call to a member function select() on null
+in APPPATH\Controllers\Main.php on line 144.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:21:50 --> Undefined variable $id_books
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Models\booksModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_books', 'APPPATH\\Models\\booksModel.php', 24)
+ 2 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 09:22:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 4 in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Models\booksModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-27 09:22:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+JOIN `category` ON `category`.`id_category` = `books`.`id_category`
+WHERE 0 = :0:', [...], false)
+ 2 APPPATH\Models\booksModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:23:03 --> Too few arguments to function App\Models\booksModel::getCategoryEdit(), 0 passed in C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php on line 144 and exactly 1 expected
+in APPPATH\Models\booksModel.php on line 23.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:23:26 --> Call to a member function first() on array
+in APPPATH\Controllers\Main.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:24:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:25:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:26:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:28:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:29:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:30:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:30:58 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:32:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+in APPPATH\Controllers\Main.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:33:14 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:33:59 --> Cannot access offset of type string on string
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:34:27 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:35:26 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:36:25 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:36:47 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:37:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:38:48 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:39:21 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:39:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:40:16 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:40:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:42:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::array()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:46:25 --> Cannot use object of type stdClass as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:47:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getFirstRow()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:50:05 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::idValue()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:50:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:52:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::result()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:52:53 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:53:06 --> Cannot use object of type stdClass as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:54:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getFirst()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(144): App\Models\booksModel->getCategoryEdit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:54:33 --> Cannot use object of type stdClass as array
+in APPPATH\Views\stocks\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/edit', [], true)
+ 4 APPPATH\Controllers\Main.php(149): view('stocks/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:58:06 --> Call to a member function where() on array
+in APPPATH\Controllers\Main.php on line 144.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 09:58:18 --> Call to undefined function App\Controllers\where()
+in APPPATH\Controllers\Main.php on line 144.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:00:23 --> Call to a member function getFirstRow() on array
+in APPPATH\Controllers\Main.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:00:39 --> Call to a member function first() on array
+in APPPATH\Controllers\Main.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:00:44 --> Attempt to read property "first" on array
+in APPPATH\Controllers\Main.php on line 145.
+ 1 APPPATH\Controllers\Main.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "first" on array', 'APPPATH\\Controllers\\Main.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:00:54 --> Array callback must have exactly two elements
+in APPPATH\Controllers\Main.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 10:16:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') as `name`
+FROM `books`
+WHERE `id_books` = '1'
+ LIMIT 1' at line 1 in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, CONCA...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, CONCA...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, CONCA...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCA...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 10:16:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') as `name`
+FROM `books`
+WHERE `id_books` = '1'
+ LIMIT 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCAT(lastname, \', \', `firstname`, \'\')) as `name`
+FROM `books`
+WHERE `id_books` = :id_books:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 10:18:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') as `name`
+FROM `books`
+WHERE `id_books` = '1'
+ LIMIT 1' at line 1 in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, CONCA...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, CONCA...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, CONCA...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCA...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 10:18:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') as `name`
+FROM `books`
+WHERE `id_books` = '1'
+ LIMIT 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCAT(lastname, \', \', `firstname`, \'\')) as `name`
+FROM `books`
+WHERE `id_books` = :id_books:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 10:20:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') as `Full Name`
+FROM `books`
+WHERE `id_books` = '1'
+ LIMIT 1' at line 1 in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, CONCA...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, CONCA...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, CONCA...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCA...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 10:20:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') as `Full Name`
+FROM `books`
+WHERE `id_books` = '1'
+ LIMIT 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCAT(firstName, \' \', lastName)) as `Full Name`
+FROM `books`
+WHERE `id_books` = :id_books:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 10:21:33 --> mysqli_sql_exception: Incorrect parameters in the call to native function 'CONCAT' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, CONCA...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, CONCA...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, CONCA...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCA...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 10:21:33 --> Incorrect parameters in the call to native function 'CONCAT'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCAT(firstName, \' \', lastName as `Full Name`)
+FROM `books`
+WHERE `id_books` = :id_books:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 10:23:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Name`
+FROM `books`
+WHERE `id_books` = '1'
+ LIMIT 1' at line 1 in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, CONCA...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, CONCA...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, CONCA...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCA...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 10:23:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Name`
+FROM `books`
+WHERE `id_books` = '1'
+ LIMIT 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCAT(firstName,  `, lastName) as `Full Name`
+FROM `books`
+WHERE `id_books` = :id_books:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 10:23:29 --> mysqli_sql_exception: Unknown column 'firstName' in 'field list' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, CONCA...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, CONCA...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, CONCA...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCA...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-27 10:23:29 --> Unknown column 'firstName' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, CONCAT(firstName, \' \', lastName) as `Full Name`
+FROM `books`
+WHERE `id_books` = :id_books:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Main.php(160): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:24:00 --> Undefined variable $request
+in APPPATH\Views\stocks\view.php on line 69.
+ 1 APPPATH\Views\stocks\view.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Views\\stocks\\view.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 5 APPPATH\Controllers\Main.php(163): view('stocks/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:26:10 --> Call to a member function first() on array
+in APPPATH\Controllers\Main.php on line 160.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:28:15 --> trim(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\Database\BaseBuilder.php on line 412.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(412): trim([...])
+ 2 APPPATH\Models\booksModel.php(26): CodeIgniter\Database\BaseBuilder->select(Object(CodeIgniter\Database\MySQLi\Builder))
+ 3 APPPATH\Controllers\Main.php(161): App\Models\booksModel->getCategoryView('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:29:31 --> trim(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\Database\BaseBuilder.php on line 412.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(412): trim([...])
+ 2 APPPATH\Models\booksModel.php(26): CodeIgniter\Database\BaseBuilder->select(Object(CodeIgniter\Database\MySQLi\Builder))
+ 3 APPPATH\Controllers\Main.php(161): App\Models\booksModel->getCategoryView('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:31:03 --> Call to undefined function App\Models\get()
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(161): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:31:58 --> Call to undefined function App\Models\where()
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(161): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 10:32:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::where()
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(161): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:46:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(161): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:48:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:49:18 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:49:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:50:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:51:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:55:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:56:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\booksModel.php on line 25.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:57:12 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:57:36 --> Undefined variable $id_books
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Models\booksModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_books', 'APPPATH\\Models\\booksModel.php', 24)
+ 2 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 12:59:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:00:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Models\booksModel.php on line 27.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:01:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::findAll()
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:04:43 --> Undefined variable $limit
+in APPPATH\Models\booksModel.php on line 26.
+ 1 APPPATH\Models\booksModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $limit', 'APPPATH\\Models\\booksModel.php', 26)
+ 2 APPPATH\Controllers\Main.php(146): App\Models\booksModel->getCategoryView('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:04:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+in APPPATH\Controllers\Main.php on line 146.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:04:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+in APPPATH\Controllers\Main.php on line 146.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->editStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:05:45 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 4 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-27 13:07:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 4 in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Models\booksModel.php(26): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Main.php(162): App\Models\booksModel->getCategoryView('1')
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-27 13:07:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+LEFT JOIN `category` ON `category`.`id_category` = `books`.`id_category`
+WHERE 0 = :0:
+AND 1 = :1:', [...], false)
+ 2 APPPATH\Models\booksModel.php(26): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\Main.php(162): App\Models\booksModel->getCategoryView('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:10:51 --> CodeIgniter\Database\BaseBuilder::whereIn(): Argument #1 ($key) must be of type ?string, array given, called in C:\xampp\htdocs\ci4-uts\uts_ci4\app\Models\booksModel.php on line 27
+in SYSTEMPATH\Database\BaseBuilder.php on line 825.
+ 1 APPPATH\Models\booksModel.php(27): CodeIgniter\Database\BaseBuilder->whereIn([...])
+ 2 APPPATH\Controllers\Main.php(162): App\Models\booksModel->getCategoryView('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:17:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Models\booksModel.php on line 28.
+ 1 APPPATH\Controllers\Main.php(162): App\Models\booksModel->getCategoryView('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:22:33 --> Undefined variable $db
+in APPPATH\Models\booksModel.php on line 24.
+ 1 APPPATH\Models\booksModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Models\\booksModel.php', 24)
+ 2 APPPATH\Controllers\Main.php(162): App\Models\booksModel->getCategoryView('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:23:56 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 4 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:32:16 --> Object of class App\Controllers\Main could not be converted to string
+in APPPATH\Controllers\Main.php on line 160.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:33:10 --> Cannot use object of type App\Models\booksModel as array
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 4 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:33:52 --> Cannot use object of type App\Models\booksModel as array
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 4 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:34:26 --> Cannot use object of type App\Models\booksModel as array
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 4 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:34:44 --> Cannot use object of type App\Models\booksModel as array
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 4 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:35:08 --> Undefined array key "name_category"
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 APPPATH\Views\stocks\view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name_category"', 'APPPATH\\Views\\stocks\\view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 5 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:42:30 --> Undefined array key "name_category"
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 APPPATH\Views\stocks\view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name_category"', 'APPPATH\\Views\\stocks\\view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 5 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:44:00 --> Undefined array key "name_category"
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 APPPATH\Views\stocks\view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name_category"', 'APPPATH\\Views\\stocks\\view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stocks\\view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 5 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:48:43 --> Cannot use object of type App\Models\booksModel as array
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 4 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:49:27 --> Cannot use object of type App\Models\booksModel as array
+in APPPATH\Views\stocks\view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stocks/view', [], true)
+ 4 APPPATH\Controllers\Main.php(164): view('stocks/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 13:52:31 --> Undefined variable $data
+in APPPATH\Controllers\Main.php on line 162.
+ 1 APPPATH\Controllers\Main.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Main.php', 162)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->detailsStocks('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 14:17:55 --> Undefined variable $ses_data
+in APPPATH\Controllers\Pos.php on line 28.
+ 1 APPPATH\Controllers\Pos.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ses_data', 'APPPATH\\Controllers\\Pos.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-27 14:18:09 --> Cannot use object of type CodeIgniter\Session\Session as array
+in APPPATH\Controllers\Pos.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
