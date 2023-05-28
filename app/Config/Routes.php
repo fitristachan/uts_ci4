@@ -66,6 +66,7 @@ $routes->post('/Main/(:any)', 'Main::$1');
 $routes->get('/pos/(:any)', 'Pos::$1',['filter' => 'authGuard']);
 $routes->post('/pos/(:any)', 'Pos::$1');
 
+$routes->get('/pdf/generate', 'PdfController::generate');
 
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';

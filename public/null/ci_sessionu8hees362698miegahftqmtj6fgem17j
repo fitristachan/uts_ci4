@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1685176597;_ci_previous_url|s:52:"http://localhost:8080/index.php/Main/editEmployee/11";id_users|s:1:"6";username|s:4:"gita";logged_in|b:1;error_message|s:239:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>Employee Number already exists</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
-";__ci_vars|a:3:{s:13:"error_message";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:6:{s:13:"employee_code";s:5:"23202";s:10:"start_date";s:10:"2023-05-26";s:9:"firstName";s:6:"Narumi";s:8:"lastName";s:6:"Momose";s:5:"title";s:7:"Cashier";s:6:"salary";s:7:"2000000";}}_ci_validation_errors|a:1:{s:13:"employee_code";s:30:"Employee Number already exists";}
