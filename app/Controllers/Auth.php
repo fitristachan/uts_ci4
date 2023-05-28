@@ -81,6 +81,7 @@ class Auth extends BaseController
                 $ses_data=[
                     'id_users' => $dataUser['id_users'],
                     'username' => $dataUser['username'],
+                    'id_employee' => $dataUser['id_employee'],
                     'logged_in' => TRUE
                 ];
                 $session->set($ses_data);

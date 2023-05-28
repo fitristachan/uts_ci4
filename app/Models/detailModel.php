@@ -10,5 +10,14 @@ class detailModel extends Model
     protected $table = 'detail_sale';
     protected $primaryKey = "id_detail";
     // allowed fields to manage
-    protected $allowedFields = ['id_detail', 'facture', 'id_books', 'barcode' ,'selling_price', 'qty', 'total_price'];
+    protected $allowedFields = ['id_detail', 'facture', 'id_books', 'qty', 'total_price'];
+    
+    
+    function getDetail(){
+        $builder = $this->db->table('detail_sale');
+        $builder->join('books', 'books.id_books = detail_sale.id_books');
+        $query = $builder->get();
+        return $query->getResult();
+    }
+
 }

@@ -6,15 +6,15 @@
     <div class="card-body">
         <div class="card-body">
         <?php date_default_timezone_set('Asia/Jakarta');?>
-            <form class="row g-3 ">
+            <form class="row g-3" method="POST" id="create-form" action="<?= base_url('pos/cashier') ?>">
                 <input type="hidden" name="id_employee" value="<?= isset($data['id_employee']) ? $data['id_employee'] : '' ?>">     
                 <div class="col-md-6">
                     <label for="facture" class="form-label">Facture</label>
-                    <input type="text" class="form-control" id="facture" name="facture" placeholder="Facture" readonly>
+                    <input type="text" class="form-control" id="facture" name="facture" value="<?= $facture ?>" readonly>
                 </div>
                 <div class="col-md-4">
-                    <label for="date" class="form-label">Date of Transaction</label>
-                    <input type="date" class="form-control" id="date" name="date" readonly value="<?= date('Y-m-d');?>">
+                    <label for="date_sale" class="form-label">Date of Transaction</label>
+                    <input type="date" class="form-control" id="date_sale" name="date_sale" value="<?= date('Y-m-d')?>" readonly >
                 </div>
                 <div class="col-md-2">
                     <label for="time" class="form-label">Time</label>
@@ -60,21 +60,24 @@
                <th scope="col">Product Name</th>
                <th scope="col">Qty</th>
                <th scope="col">Selling Price</th>
-               <th scope="col">Grand Total</th>
+               <th scope="col">Total Price</th>
                <th scope="col">Action</th>
              </tr>
             </thead>
             <tbody>
+            <?php $i = 1; ?>
+            <?php foreach($datadetail as $row): ?>
              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><?= $i++ ?></td>
+                <td><?= $row->code_book ?></td>
+                <td><?= $row->title ?></td>
+                <td><?= $row->qty ?></td>
+                <td><span>Rp</span><?= $row->selling_price ?><span>,00</span></td>
+                <td><?= $row->total_price ?></td>
                 <td> <a href="<?= base_url('Main/deleteEmployee/') ?>" onclick="if(confirm('Are you sure to delete this data?') === false) event.preventDefault()" class="btn btn-danger rounded-0" title="Delete Transaction"><i class="bi bi-trash"></i></a></td>
              </tr>
             </tbody>
+            <?php endforeach; ?>
         </table>  
     </div>
 </div>
@@ -115,21 +118,5 @@
 </div>
 
 <script>
-function getFacture(
-  $.ajax({
-    type: "post",
-    url: "<? site_url('pos/getFacture') ?>"
-    data: {
-        date : $('#date').val()
-    },
-    dataType: "json",
-    success: function (response){
 
-    },
-    error: function(xhr, thrownError){
-        alert{xhr.status + "\n" + xhr.responseText + "\n" + thrownError};
-
-    }
-  })
-)
 </script>
