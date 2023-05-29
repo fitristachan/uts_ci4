@@ -12110,4 +12110,8 @@ textarea.form-control-lg {
   }
 }
 
+.scrollme {
+  overflow-x: auto;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

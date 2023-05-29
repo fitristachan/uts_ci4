@@ -9,6 +9,7 @@
     <a href="<?= base_url('Main/addStocks/') ?>"class="btn btn-primary"><i class="bi bi-plus-lg"></i></a>
   </nav>
 <br>
+<div class="table-responsive scrollme">
     <table class="table table-bordered">
   <thead class="table-primary">
     <tr>
@@ -40,5 +41,6 @@
       <?php endif; ?>
   </tbody>
 </table>
+      </div>
       </div>
       </div>

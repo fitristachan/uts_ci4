@@ -158,7 +158,6 @@ class Pos extends BaseController
                session()->setFlashdata('error_message', 'Customer Need To Pay');
                 return redirect()->back()->withInput();
             }
-
             $insertData = [
                 'facture' => $facture,
                 'date_sale' => $date_sale,
@@ -172,7 +171,8 @@ class Pos extends BaseController
             if ($save){
                 $this->session->setFlashdata('success_message','Payment Success') ;
                 $this->data['data'] = $facture;
-                return redirect()->to('pos/invoice', $this->data);
+                //return redirect()->to('pos/invoice', $this->data);
+                echo view('cashier/invoice', $this->data);
             }
         }
 
@@ -181,6 +181,13 @@ class Pos extends BaseController
             $this->data['data'] = $qry->first();
             echo view('templates/header', $this->data);
             echo view('cashier/invoice', $this->data);
+            echo view('templates/footer');
+        }
+
+        public function history(){
+            $this->data['list'] = $this->sale_model->orderBy('facture ASC')->select('*')->getAll();
+            echo view('templates/header', $this->data);
+            echo view('cashier/history', $this->data);
             echo view('templates/footer');
         }
 }

@@ -18,4 +18,11 @@ class saleModel extends Model
         $query = $builder->get();
         return $query->getResult();
     }
+
+    function getAll(){
+        $builder = $this->db->table('sale');
+        $builder->join('detail_sale', 'detail_sale.facture = sale.facture')->join('employee', 'employee.id_employee = sale.id_employee')->join('books', 'books.id_books = detail_sale.id_books')->join('category', 'category.id_category = books.id_category');
+        $query = $builder->get();
+        return $query->getResult();
+    }
 }

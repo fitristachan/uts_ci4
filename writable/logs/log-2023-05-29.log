@@ -10,3 +10,27 @@ in APPPATH\Views\cashier\cashier.php on line 76.
  8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 00:29:24 --> Undefined property: stdClass::$date
+in APPPATH\Views\cashier\history.php on line 27.
+ 1 APPPATH\Views\cashier\history.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$date', 'APPPATH\\Views\\cashier\\history.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/history', [], true)
+ 5 APPPATH\Controllers\Pos.php(190): view('cashier/history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 00:29:53 --> Undefined property: stdClass::$change
+in APPPATH\Views\cashier\history.php on line 34.
+ 1 APPPATH\Views\cashier\history.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$change', 'APPPATH\\Views\\cashier\\history.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/history', [], true)
+ 5 APPPATH\Controllers\Pos.php(190): view('cashier/history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

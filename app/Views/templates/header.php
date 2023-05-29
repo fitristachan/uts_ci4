@@ -35,7 +35,7 @@
     <a class="nav-link" href="<?= base_url('Main/stocks')?>">Stock</a>
     <a class="nav-link" href="<?= base_url('pos/cashier')?>">Cashier</a>
     <a class="nav-link" href="<?= base_url('Main/employee')?>">Employee</a>
-    <a class="nav-link" href="#">History</a>
+    <a class="nav-link" href="<?= base_url('pos/history')?>">History</a>
 </div>
 </div>
 </div>
@@ -55,7 +55,7 @@
           </li>
           <a class="nav-link" href="<?= base_url('pos/cashier')?>">Cashier</a>
           <a class="nav-link" href="<?= base_url('Main/employee')?>">Employee</a>
-          <a class="nav-link" href="#">History</a>
+          <a class="nav-link" href="<?= base_url('pos/history')?>">History</a>
         </ul>
       </div>
     </div>
