@@ -34,3 +34,578 @@ in APPPATH\Views\cashier\history.php on line 34.
  8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-29 05:12:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'bookstore', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Auth.php(76): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Auth.php(76): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-29 05:12:44 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(76): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-29 05:13:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'bookstore', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Auth.php(76): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Auth.php(76): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-29 05:13:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(76): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:14:03 --> Attempt to read property "code_book" on array
+in APPPATH\Views\cashier\cashier.php on line 76.
+ 1 APPPATH\Views\cashier\cashier.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "code_book" on array', 'APPPATH\\Views\\cashier\\cashier.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(64): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:14:25 --> Attempt to read property "code_book" on array
+in APPPATH\Views\cashier\cashier.php on line 76.
+ 1 APPPATH\Views\cashier\cashier.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "code_book" on array', 'APPPATH\\Views\\cashier\\cashier.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(64): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:15:36 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+in APPPATH\Views\cashier\cashier.php on line 78.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 3 APPPATH\Controllers\Pos.php(64): view('cashier/cashier', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:16:47 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\cashier\cashier.php on line 73.
+ 1 APPPATH\Views\cashier\cashier.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\cashier\\cashier.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(64): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:18:36 --> Attempt to assign property "datadetail" on array
+in APPPATH\Controllers\Pos.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:27:21 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Pos.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:28:00 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\cashier\cashier.php on line 73.
+ 1 APPPATH\Views\cashier\cashier.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\cashier\\cashier.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(64): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:28:41 --> Trying to access array offset on value of type null
+in APPPATH\Views\cashier\cashier.php on line 76.
+ 1 APPPATH\Views\cashier\cashier.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\cashier\\cashier.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(64): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:30:15 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\cashier\cashier.php on line 73.
+ 1 APPPATH\Views\cashier\cashier.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\cashier\\cashier.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(64): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:33:04 --> Attempt to read property "facture" on array
+in APPPATH\Controllers\Pos.php on line 49.
+ 1 APPPATH\Controllers\Pos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "facture" on array', 'APPPATH\\Controllers\\Pos.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:39:22 --> Undefined property: App\Controllers\Pos::$result
+in APPPATH\Controllers\Pos.php on line 49.
+ 1 APPPATH\Controllers\Pos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Pos::$result', 'APPPATH\\Controllers\\Pos.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:45:27 --> Call to a member function get() on string
+in APPPATH\Controllers\Pos.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:45:40 --> Call to a member function toString() on string
+in APPPATH\Controllers\Pos.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:45:54 --> Call to a member function toInt() on string
+in APPPATH\Controllers\Pos.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:47:42 --> Call to a member function toArray() on string
+in APPPATH\Controllers\Pos.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:48:14 --> Call to undefined function App\Controllers\toArray()
+in APPPATH\Controllers\Pos.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:49:05 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\cashier\cashier.php on line 77.
+ 1 APPPATH\Views\cashier\cashier.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\cashier\\cashier.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(65): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:52:29 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\cashier\cashier.php on line 77.
+ 1 APPPATH\Views\cashier\cashier.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\cashier\\cashier.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(65): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:52:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\cashier\cashier.php on line 80.
+ 1 APPPATH\Views\cashier\cashier.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\cashier\\cashier.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(65): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:54:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\cashier\cashier.php on line 80.
+ 1 APPPATH\Views\cashier\cashier.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\cashier\\cashier.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(65): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:55:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\cashier\cashier.php on line 80.
+ 1 APPPATH\Views\cashier\cashier.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\cashier\\cashier.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(65): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 05:56:10 --> Undefined variable $facture
+in APPPATH\Controllers\Pos.php on line 51.
+ 1 APPPATH\Controllers\Pos.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $facture', 'APPPATH\\Controllers\\Pos.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 12:56:40 --> Cannot use object of type stdClass as array
+in APPPATH\Views\cashier\cashier.php on line 80.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 4 APPPATH\Controllers\Pos.php(64): view('cashier/cashier', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 06:01:05 --> Unsupported operand types: string - array
+in APPPATH\Controllers\Pos.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->allSave()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 06:02:07 --> Unsupported operand types: string - array
+in APPPATH\Controllers\Pos.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->allSave()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 06:49:01 --> Undefined variable $data
+in APPPATH\Views\cashier\invoice.php on line 28.
+ 1 APPPATH\Views\cashier\invoice.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\cashier\\invoice.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/cashier/invoice', [], true)
+ 5 APPPATH\Controllers\PdfController.php(17): view('/cashier/invoice')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PdfController->generate()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-29 07:34:00 --> mysqli_sql_exception: Duplicate entry 'HB2905230004' for key 'PRIMARY' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `sa...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sa...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sa...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sa...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Pos.php(171): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Pos->allSave()
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-29 07:34:00 --> Duplicate entry 'HB2905230004' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sale` (`facture`, `date_sale`, `time_sale`, `id_employee`, `cash`, `grand_total`) VALUES (:facture:, :date_sale:, :time_sale:, :id_employee:, :cash:, :grand_total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Pos.php(171): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->allSave()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-29 07:34:46 --> mysqli_sql_exception: Duplicate entry 'HB2905230005' for key 'PRIMARY' in C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `sa...', 0)
+#1 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sa...')
+#2 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sa...')
+#3 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sa...', Array, false)
+#4 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci4-uts\uts_ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Pos.php(171): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(934): App\Controllers\Pos->allSave()
+#9 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+#10 C:\xampp\htdocs\ci4-uts\uts_ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci4-uts\uts_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci4-uts\uts_ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-29 07:34:46 --> Duplicate entry 'HB2905230005' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sale` (`facture`, `date_sale`, `time_sale`, `id_employee`, `cash`, `grand_total`) VALUES (:facture:, :date_sale:, :time_sale:, :id_employee:, :cash:, :grand_total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Pos.php(171): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->allSave()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 07:36:21 --> Call to undefined function App\Controllers\typeof()
+in APPPATH\Controllers\Pos.php on line 172.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->allSave()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 07:40:52 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #2 ($code) must be of type ?int, array given, called in C:\xampp\htdocs\ci4-uts\uts_ci4\app\Controllers\Pos.php on line 176
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 32.
+ 1 APPPATH\Controllers\Pos.php(176): CodeIgniter\HTTP\RedirectResponse->to('pos/invoice', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->allSave()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 07:49:39 --> Trying to access array offset on value of type null
+in APPPATH\Views\cashier\invoice.php on line 28.
+ 1 APPPATH\Views\cashier\invoice.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\cashier\\invoice.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/invoice', [], true)
+ 5 APPPATH\Controllers\Pos.php(187): view('cashier/invoice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 07:50:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pos.php on line 184.
+ 1 APPPATH\Controllers\Pos.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Pos.php', 184)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 07:50:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pos.php on line 184.
+ 1 APPPATH\Controllers\Pos.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Pos.php', 184)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:12:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pos.php on line 182.
+ 1 APPPATH\Controllers\Pos.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Pos.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice('HB2805230001')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:12:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pos.php on line 182.
+ 1 APPPATH\Controllers\Pos.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Pos.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 15:16:35 --> Attempt to read property "code_book" on array
+in APPPATH\Views\cashier\cashier.php on line 76.
+ 1 APPPATH\Views\cashier\cashier.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "code_book" on array', 'APPPATH\\Views\\cashier\\cashier.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(65): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 15:17:19 --> Attempt to read property "title" on array
+in APPPATH\Views\cashier\cashier.php on line 77.
+ 1 APPPATH\Views\cashier\cashier.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'APPPATH\\Views\\cashier\\cashier.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\cashier.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/cashier', [], true)
+ 5 APPPATH\Controllers\Pos.php(65): view('cashier/cashier', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->cashier()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:20:45 --> Undefined variable $joinBooks
+in APPPATH\Controllers\Pos.php on line 184.
+ 1 APPPATH\Controllers\Pos.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $joinBooks', 'APPPATH\\Controllers\\Pos.php', 184)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:21:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pos.php on line 182.
+ 1 APPPATH\Controllers\Pos.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Pos.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:22:04 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pos.php on line 182.
+ 1 APPPATH\Controllers\Pos.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Pos.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:22:49 --> Undefined variable $qry
+in APPPATH\Controllers\Pos.php on line 182.
+ 1 APPPATH\Controllers\Pos.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qry', 'APPPATH\\Controllers\\Pos.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:23:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pos.php on line 182.
+ 1 APPPATH\Controllers\Pos.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Pos.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:24:52 --> Undefined array key "firstName"
+in APPPATH\Views\cashier\invoice.php on line 28.
+ 1 APPPATH\Views\cashier\invoice.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstName"', 'APPPATH\\Views\\cashier\\invoice.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/invoice', [], true)
+ 5 APPPATH\Controllers\Pos.php(184): view('cashier/invoice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:28:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pos.php on line 180.
+ 1 APPPATH\Controllers\Pos.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Pos.php', 180)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:29:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pos.php on line 181.
+ 1 APPPATH\Controllers\Pos.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Pos.php', 181)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:29:50 --> Undefined array key "firstName"
+in APPPATH\Views\cashier\invoice.php on line 28.
+ 1 APPPATH\Views\cashier\invoice.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstName"', 'APPPATH\\Views\\cashier\\invoice.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/invoice', [], true)
+ 5 APPPATH\Controllers\Pos.php(184): view('cashier/invoice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 08:34:10 --> Undefined array key "title"
+in APPPATH\Views\cashier\invoice.php on line 63.
+ 1 APPPATH\Views\cashier\invoice.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'APPPATH\\Views\\cashier\\invoice.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cashier\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cashier/invoice', [], true)
+ 5 APPPATH\Controllers\Pos.php(184): view('cashier/invoice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pos->invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

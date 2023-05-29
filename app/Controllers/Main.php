@@ -62,7 +62,8 @@ class Main extends BaseController
             'publisher' => $this->request->getPost('publisher'), 
             'purchase_price' => $this->request->getPost('purchase_price'), 
             'selling_price' => $this->request->getPost('selling_price'), 
-            'id_category' => $this->request->getPost('id_category')
+            'id_category' => $this->request->getPost('id_category'),
+            'stock' => $this->request->getPost('stock')
         ];
         if(!empty($this->request->getPost('id_books'))){
             $save = $this->stocks_model->where(['id_books'=>$this->request->getPost('id_books')])->set($post)->update();

@@ -47,9 +47,8 @@ class Pos extends BaseController
 
         //gettable
         $facture = $this->data['facture'];
-        $joinBooks= $this->detail_model->getDetail();
+        $joinBooks= $this->detail_model->where('facture', $facture)->join('books', 'books.id_books = detail_sale.id_books')->findAll();
         $this->data['datadetail']= $joinBooks;
-//where(['facture'=> $facture])->join('books', 'books.id_books = detail_sale.id_books', 'FULL');
 
 
         //insertvaluetitle
@@ -59,6 +58,7 @@ class Pos extends BaseController
         //grand_total
         $grandTotal = $this->detail_model->select("SUM(total_price) as grand_total")->where(['facture'=> $this->data['facture']]);
         $this->data['grandTotal'] =  $grandTotal->first();
+        
         
         echo view('templates/header', $this->data);
         echo view('cashier/cashier', $this->data);
@@ -77,6 +77,7 @@ class Pos extends BaseController
 
     }
     public function tempSave(){
+            
             $productcode = $this->request->getPost('product_code');
             $productname = $this->request->getPost('product_name');
             $qty = $this->request->getPost('qty');
@@ -124,7 +125,7 @@ class Pos extends BaseController
                 return redirect()->to('/pos/cashier');
             }
             $delete = $this->detail_model->delete($id_detail);
-
+            dd[$delete];
             if($delete){
                 $newStocks = floatval($rowProduct['stock'] + $rowProduct['qty']);
                 $insertnewStocks = [
@@ -165,20 +166,23 @@ class Pos extends BaseController
                 'id_employee' => $id_employee,
                 'cash' => $cash,
                 'grand_total' => $grand_total,
-                'change' => floatval((int)$cash - (int)$grand_total)
+                'change_purchase' => (int)$cash - (int)$grand_total['grand_total']
             ];
             $save = $this->sale_model->insert($insertData);
-            if ($save){
-                $this->session->setFlashdata('success_message','Payment Success') ;
+       
                 $this->data['data'] = $facture;
-                //return redirect()->to('pos/invoice', $this->data);
-                echo view('cashier/invoice', $this->data);
-            }
+                $this->session->setFlashData('data', $this->data);
+                return redirect()->to('pos/invoice');
+             
+
         }
 
         public function invoice($facture=''){
-            $qry= $this->sale_model->select("*")->where(['sale.facture'=>$facture])->join('employee', 'employee.id_employee= sale.id_employee', 'LEFT')->join('detail_sale', 'detail_sale.facture= sale.facture', 'RIGHT')->join('books', 'books.id_books= detail_sale.id_books', 'RIGHT');
-            $this->data['data'] = $qry->first();
+            $qry= $this->sale_model->where('sale.facture', $this->session->getFlashData('data')['data'])->join('employee', 'employee.id_employee= sale.id_employee')->join('detail_sale', 'detail_sale.facture= sale.facture')->join('books', 'books.id_books= detail_sale.id_books')->findAll();
+            $this->data['data'] = $qry;
+
+            $qry2= $this->sale_model->where('sale.facture', $this->session->getFlashData('data')['data'])->join('employee', 'employee.id_employee= sale.id_employee')->join('detail_sale', 'detail_sale.facture= sale.facture')->join('books', 'books.id_books= detail_sale.id_books')->first();
+            $this->data['data2'] = $qry2;
             echo view('templates/header', $this->data);
             echo view('cashier/invoice', $this->data);
             echo view('templates/footer');

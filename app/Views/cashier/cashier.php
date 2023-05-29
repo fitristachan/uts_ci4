@@ -73,12 +73,12 @@
             <?php foreach($datadetail as $row): ?>
              <tr>
                 <td><?= $i++ ?></td>
-                <td><?= $row->code_book ?></td>
-                <td><?= $row->title ?></td>
-                <td><?= $row->qty ?></td>
-                <td><span>Rp</span><?= $row->selling_price ?><span>,00</span></td>
-                <td><?= $row->total_price ?></td>
-                <td> <a href="<?= base_url('pos/deleteTempSave/'.$row->id_books) ?>" onclick="if(confirm('Are you sure to delete <?= $row->title ?> from cart?') === false) event.preventDefault()" class="btn btn-danger rounded-0" title="Delete From Cart"><i class="bi bi-trash"></i></a></td>
+                <td><?= $row['code_book'] ?></td>
+                <td><?= $row['title'] ?></td>
+                <td><?= $row['qty'] ?></td>
+                <td><span>Rp</span><?= $row['selling_price'] ?><span>,00</span></td>
+                <td><?= $row['total_price'] ?></td>
+                <td> <a href="<?= base_url('pos/deleteTempSave/'.$row['id_books']) ?>" onclick="if(confirm('Are you sure to delete <?= $row['title'] ?> from cart?') === false) event.preventDefault()" class="btn btn-danger rounded-0" title="Delete From Cart"><i class="bi bi-trash"></i></a></td>
              </tr>
             </tbody>
             <?php endforeach; ?>

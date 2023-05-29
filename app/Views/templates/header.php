@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<pre><link rel="icon" href="<?php echo base_url(); ?>favicon.ico" type="image/gif"></pre>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Happiness Bookstore</title>
